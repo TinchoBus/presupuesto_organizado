@@ -1,0 +1,18 @@
+/presupuesto-backend
+   /src
+      /config
+         database.js
+      /models
+         Usuario.js
+         Categoria.js
+         Gasto.js
+      /controllers
+         usuarioController.js
+         categoriaController.js
+         gastoController.js
+      /routes
+         usuarioRoutes.js
+         categoriaRoutes.js
+         gastoRoutes.js
+      app.js
+      server.js
