@@ -1,12 +1,20 @@
-import { Router } from "express";
+import express from "express";
 import {
-  crearCategoria,
-  obtenerCategorias
-} from "../controllers/CategoriaController.js";
+  crearCategorias,
+  obtenerCategorias,
+  eliminarCategoria
+} from "../controllers/categoriaController.js";
 
-const router = Router();
+const router = express.Router();
 
-router.post("/", crearCategoria);
+
+// Crear múltiples categorías
+router.post("/multiples", crearCategorias);
+
+// Obtener todas las categorías
 router.get("/", obtenerCategorias);
+
+// Eliminar categoría por ID
+router.delete("/:id", eliminarCategoria);
 
 export default router;

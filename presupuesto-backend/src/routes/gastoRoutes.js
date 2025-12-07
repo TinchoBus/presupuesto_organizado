@@ -1,16 +1,9 @@
-import { Router } from "express";
-import {
-  crearGasto,
-  obtenerGastos,
-  obtenerGastosPorUsuario,
-  obtenerGastosPorMes
-} from "../controllers/gastoController.js";
+import express from "express";
+import { crearGasto, obtenerGastos } from "../controllers/gastoController.js";
 
-const router = Router();
+const router = express.Router();
 
 router.post("/", crearGasto);
 router.get("/", obtenerGastos);
-router.get("/usuario/:usuarioId", obtenerGastosPorUsuario);
-router.get("/mes/:mes", obtenerGastosPorMes);
 
 export default router;

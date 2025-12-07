@@ -1,13 +1,18 @@
 import { Usuario } from "./usuario.js";
 import { Categoria } from "./Categoria.js";
 import { Gasto } from "./Gasto.js";
+import { Presupuesto } from "./Presupuesto.js";
 
-// Relación -> Usuario tiene muchos Gastos
+// Usuario - Gasto
 Usuario.hasMany(Gasto);
 Gasto.belongsTo(Usuario);
 
-// Relación -> Categoria tiene muchos Gastos
+// Categoria - Gasto
 Categoria.hasMany(Gasto);
 Gasto.belongsTo(Categoria);
 
-export { Usuario, Categoria, Gasto };
+// Presupuesto - Gasto
+Presupuesto.hasMany(Gasto);
+Gasto.belongsTo(Presupuesto);
+
+export { Usuario, Categoria, Gasto, Presupuesto };

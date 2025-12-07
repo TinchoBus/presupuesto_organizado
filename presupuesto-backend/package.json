@@ -1,12 +1,12 @@
 {
   "name": "presupuesto-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "description": "/presupuesto-backend\r    /src\r       /config\r          database.js\r       /models\r          Usuario.js\r          Categoria.js\r          Gasto.js\r       /controllers\r          usuarioController.js\r          categoriaController.js\r          gastoController.js\r       /routes\r          usuarioRoutes.js\r          categoriaRoutes.js\r          gastoRoutes.js\r       app.js\r       server.js",
+  "main": "src/server.js",
   "scripts": {
-  "dev": "nodemon src/server.js"
-},
-
+    "dev": "nodemon src/server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
